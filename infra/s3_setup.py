@@ -1,8 +1,3 @@
-"""
-PSEUDOCODE — AWS S3 Setup
-Creates the lseg-ai-docs bucket and uploads all source documents.
-Not executed locally; documents are read from docs/ directly.
-"""
 import boto3
 import os
 

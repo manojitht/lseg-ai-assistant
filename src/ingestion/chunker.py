@@ -5,13 +5,6 @@ from src.ingestion.document_loader import Document
 
 
 def chunk_sop(doc: Document) -> list[Document]:
-    """
-    Split an SOP document on ## headers — one chunk per section.
-    Each chunk inherits the parent source and gains a 'section' metadata key.
-
-    Section-level chunking is intentional: SOP sections are atomic procedures
-    whose numbered steps must stay together to preserve execution order.
-    """
     text  = doc.text
     parts = re.split(r"(?m)^##\s+", text)
 
@@ -39,7 +32,6 @@ def chunk_sop(doc: Document) -> list[Document]:
 
 
 def chunk_tickets(ticket_docs: list[Document]) -> list[Document]:
-    """Each ticket row is already a self-contained chunk; stamp doc_type."""
     for doc in ticket_docs:
         doc.metadata.setdefault("doc_type", "ticket")
     return ticket_docs

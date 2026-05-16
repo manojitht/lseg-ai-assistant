@@ -14,7 +14,6 @@ class Document:
 
 
 def load_sop_documents(docs_dir: str) -> list[Document]:
-    """Load every *.md file in docs_dir as a single Document per file."""
     documents: list[Document] = []
     for path in sorted(Path(docs_dir).glob("SOP-*.md")):
         text = path.read_text(encoding="utf-8")
@@ -24,7 +23,6 @@ def load_sop_documents(docs_dir: str) -> list[Document]:
 
 
 def load_tickets_dataframe(docs_dir: str) -> pd.DataFrame:
-    """Load INCIDENT-TICKETS.csv into a DataFrame with normalised column types."""
     csv_path = Path(docs_dir) / "INCIDENT-TICKETS.csv"
     df = pd.read_csv(csv_path, parse_dates=["Created_Date"])
     df.columns = [c.strip() for c in df.columns]
@@ -36,7 +34,6 @@ def load_tickets_dataframe(docs_dir: str) -> pd.DataFrame:
 
 
 def load_ticket_documents(df: pd.DataFrame) -> list[Document]:
-    """Convert each ticket row into a Document for RAG indexing."""
     documents: list[Document] = []
     for _, row in df.iterrows():
         text = (

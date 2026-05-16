@@ -1,14 +1,5 @@
-"""
-Demo script — runs all example queries from the assignment and prints
-formatted output showing source citations, confidence scores, and guardrail behaviour.
-
-Usage:
-    AWS_ACCESS_KEY_ID=... AWS_SECRET_ACCESS_KEY=... uv run python demo.py
-"""
 from __future__ import annotations
-
 import textwrap
-
 from src import config
 from src.assistant import Assistant, load_or_build_index
 

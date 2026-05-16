@@ -1,11 +1,3 @@
-"""
-PSEUDOCODE — AWS Lambda: Document Ingestion Pipeline
-Triggered by S3 PUT events on the lseg-ai-docs bucket.
-Embeds new/updated documents and upserts them into OpenSearch Serverless.
-
-In production this replaces the local build_index() call in assistant.py.
-The retriever and assistant remain unchanged — only the index population differs.
-"""
 import boto3
 import json
 import os

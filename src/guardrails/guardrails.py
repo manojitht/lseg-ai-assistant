@@ -1,20 +1,6 @@
-"""
-Three concrete guardrail mechanisms:
-
-  1. Confidence Threshold — refuse to call LLM when max retrieval score < threshold.
-  2. Source Domain Validation — warn when retrieved docs don't match query domain.
-  3. Policy Anomaly Detector — flag social-engineering patterns against SOP-001.
-
-The anomaly detector is specifically tuned to the known dataset:
-  - TKT-1180: remote MFA reset request via phone with "executive approval" claim
-  - TKT-1142: legitimate CISO-approved override (TKT-7421, biometric verification)
-SOP-001 states remote MFA resets are prohibited; TKT-7421 is the one valid exception.
-"""
 from __future__ import annotations
-
 import re
 from dataclasses import dataclass, field
-
 from src import config
 from src.ingestion.document_loader import Document
 
@@ -98,10 +84,6 @@ def _detect_domain(text: str) -> str:
 
 
 def _detect_anomaly(query: str, docs: list[Document]) -> str:
-    """
-    Check the query and retrieved ticket descriptions for social-engineering
-    patterns that conflict with SOP-001 MFA Reset Policy.
-    """
     combined = query + " " + " ".join(d.text for d in docs if d.metadata.get("doc_type") == "ticket")
 
     pattern_hit = any(p.search(combined) for p in _ANOMALY_PATTERNS)
@@ -118,9 +100,9 @@ def _detect_anomaly(query: str, docs: list[Document]) -> str:
         )
 
     return (
-        "⚠ POLICY ANOMALY DETECTED: This request matches a pattern associated with "
+        "POLICY ANOMALY DETECTED: This request matches a pattern associated with "
         "social-engineering attempts (remote MFA reset via phone/urgency/claimed approvals). "
-        "Per SOP-001 § MFA Reset Policy, remote MFA resets are NOT permitted under any "
+        "Per SOP-001 and MFA Reset Policy, remote MFA resets are NOT permitted under any "
         "circumstances. The user must visit a regional hub in person. "
         "Do NOT process this request remotely. Escalate to Security-Ops for review."
     )
