@@ -307,6 +307,16 @@ Questions like "how many Access tickets are Open?" have exactly one correct answ
 
 **Trade-off:** The regex/keyword parser is brittle to novel phrasing. A production system would use an NL-to-SQL model (e.g. Bedrock Claude with a structured-output schema) for robustness, at the cost of latency and the small risk of an incorrect filter.
 
+### 4. Latency vs accuracy: top-K retrieval depth
+
+**Chosen: k=5** — retrieve the top 5 chunks per query.
+
+Increasing k improves recall (more relevant context reaches the LLM) but raises cost and latency: each extra chunk adds tokens to the prompt and increases the LLM's time-to-first-token. Decreasing k reduces latency but risks missing a relevant section when the query spans multiple SOP areas.
+
+k=5 is set as a configurable environment variable (`TOP_K`) so it can be tuned in production without a code deploy. Latency is tracked per-component in structured logs (`retrieval_ms`, `llm_ms`, `total_ms`) — in practice, Bedrock LLM invocation dominates at ~1.5–3s while FAISS retrieval is <50ms, so k has minimal impact on total latency at this scale.
+
+**Trade-off:** At higher document volumes (tens of thousands of chunks), a larger k combined with a long-context model would improve accuracy at the cost of significantly higher per-query spend. The right balance depends on query volume and acceptable p95 latency SLA.
+
 ---
 
 ## Failure Modes and Mitigations

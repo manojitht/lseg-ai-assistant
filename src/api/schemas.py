@@ -1,11 +1,8 @@
 from __future__ import annotations
-
 from pydantic import BaseModel, Field
-
 
 class AskRequest(BaseModel):
     query: str = Field(..., min_length=3, max_length=1000, description="The operational question to ask")
-
 
 class AskResponse(BaseModel):
     answer: str = Field(..., description="The assistant's answer")

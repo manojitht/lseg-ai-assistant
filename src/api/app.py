@@ -1,21 +1,8 @@
-"""
-FastAPI application factory with lifespan index loading.
-
-On startup:
-  - Load (or build) the FAISS index from docs/
-  - Initialise the Assistant
-  - Attach both to app.state so routes can access them via request.app.state
-
-This ensures embeddings are computed once and reused across all requests.
-"""
 from __future__ import annotations
-
 import logging
 import sys
 from contextlib import asynccontextmanager
-
 from fastapi import FastAPI
-
 from src.api.routes import router
 from src.assistant import Assistant, load_or_build_index
 

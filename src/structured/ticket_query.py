@@ -1,19 +1,6 @@
-"""
-Deterministic structured query handler for INCIDENT-TICKETS data.
-
-Structured queries (counting, filtering) are handled via pandas — never via LLM.
-This guarantees exact, auditable answers for questions like:
-  "How many Access tickets are currently Open?"
-  "List all P1 Deploy tickets that are Escalated"
-
-Unrecognised phrasing returns None → caller falls back to the RAG pipeline.
-"""
 from __future__ import annotations
-
 import re
-
 import pandas as pd
-
 
 
 _COUNT_PATTERNS = re.compile(
@@ -42,10 +29,6 @@ def is_structured_query(query: str) -> bool:
 
 
 def handle(query: str, df: pd.DataFrame) -> str:
-    """
-    Parse the query for filters, apply them to the DataFrame deterministically,
-    and return a human-readable answer string.
-    """
     q_lower = query.lower()
 
     # Extract filters

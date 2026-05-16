@@ -1,8 +1,3 @@
-"""
-PSEUDOCODE — IAM Role Definitions (least privilege)
-Prints the policy JSON for the two roles required by this application.
-Apply via AWS Console or aws iam create-policy / attach-role-policy.
-"""
 import json
 
 ACCOUNT_ID      = "<your-account-id>"

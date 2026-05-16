@@ -1,24 +1,10 @@
-"""
-FAISS vector store — build, persist, load, and search.
-
-Uses IndexFlatIP (inner product) over unit-normalised vectors, which is
-equivalent to cosine similarity. Scores are in [0, 1] after normalisation.
-
-Production replacement: Amazon OpenSearch Serverless with k-NN plugin.
-The retriever interface (search → list[tuple[Document, float]]) is identical;
-only this module needs to be swapped. See infra/opensearch_setup.py.
-"""
 from __future__ import annotations
-
 import os
 import pickle
 from pathlib import Path
-
 import faiss
 import numpy as np
-
 from src.ingestion.document_loader import Document
-
 
 class FaissStore:
     def __init__(self, dim: int) -> None:
@@ -28,7 +14,6 @@ class FaissStore:
 
 
     def add(self, docs: list[Document], embeddings: list[list[float]]) -> None:
-        """Add documents + their embeddings to the index."""
         vecs = np.array(embeddings, dtype=np.float32)
         # Normalise to unit length so inner product == cosine similarity
         faiss.normalize_L2(vecs)
@@ -37,7 +22,6 @@ class FaissStore:
 
 
     def search(self, query_vec: list[float], top_k: int) -> list[tuple[Document, float]]:
-        """Return (document, cosine_similarity) pairs sorted descending by score."""
         vec = np.array([query_vec], dtype=np.float32)
         faiss.normalize_L2(vec)
         scores, indices = self.index.search(vec, top_k)

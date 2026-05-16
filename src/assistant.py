@@ -1,25 +1,7 @@
-"""
-Assistant — main orchestrator.
-
-Query flow:
-  1. Structured route  → pandas (deterministic, no LLM)
-  2. RAG route
-       a. Retrieve top-K chunks from FAISS
-       b. Confidence guardrail — refuse if max score < threshold
-       c. Anomaly + domain guardrails — inject warnings into prompt
-       d. Build prompt (system + user separation)
-       e. Call Claude 3.7 Sonnet via Bedrock
-       f. Return answer with citations + metadata
-
-The assistant is stateless; index loading is handled externally (app lifespan).
-"""
 from __future__ import annotations
-
 import logging
 from dataclasses import dataclass, field
-
 import pandas as pd
-
 from src import config
 from src.guardrails import guardrails
 from src.ingestion.document_loader import Document
@@ -30,7 +12,6 @@ from src.vector_store.faiss_store import FaissStore
 
 logger = logging.getLogger(__name__)
 
-
 @dataclass
 class AssistantResponse:
     answer: str
@@ -38,7 +19,6 @@ class AssistantResponse:
     citations: list[str] = field(default_factory=list)
     confidence: float | None = None
     anomaly_flagged: bool = False
-
 
 class Assistant:
     def __init__(self, store: FaissStore, tickets_df: pd.DataFrame) -> None:
@@ -94,7 +74,6 @@ class Assistant:
         )
 
 
-
 def build_index(docs_dir: str) -> tuple[FaissStore, pd.DataFrame]:
     """
     Load all documents, embed them, build the FAISS index, and return
@@ -139,7 +118,6 @@ def load_or_build_index(docs_dir: str) -> tuple[FaissStore, pd.DataFrame]:
         return store, tickets_df
 
     return build_index(docs_dir)
-
 
 
 def _build_citations(docs: list[Document]) -> list[str]:

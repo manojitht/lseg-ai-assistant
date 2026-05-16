@@ -1,15 +1,9 @@
-"""
-Prompt templates with explicit system / user separation.
-
-System prompt defines strict rules — the LLM must cite sources, refuse when
-context is insufficient, and flag policy anomalies. Temperature=0 enforces
-deterministic, compliance-grade output.
-"""
 from __future__ import annotations
-
 from src.ingestion.document_loader import Document
 
-SYSTEM_PROMPT = """You are an internal AI assistant for LSEG DSM (Data & Analytics) operations.
+SYSTEM_PROMPT = """
+
+You are an internal AI assistant for LSEG DSM (Data & Analytics) operations.
 Your sole purpose is to answer operational questions using ONLY the context provided below.
 
 STRICT RULES — follow every one without exception:
@@ -26,19 +20,12 @@ STRICT RULES — follow every one without exception:
    b) Quote the correct policy from the SOP.
    c) Refuse to advise any action that violates the policy.
 5. Never hallucinate ticket IDs, SOP sections, or procedural steps.
-6. Keep answers concise and actionable."""
+6. Keep answers concise and actionable.
+
+"""
 
 
-def build_prompt(
-    query: str,
-    docs: list[Document],
-    anomaly_note: str = "",
-    domain_note: str = "",
-) -> dict:
-    """
-    Build the system + user prompt dict in Claude Messages API format.
-    Returns {"system": str, "messages": [{"role": "user", "content": str}]}
-    """
+def build_prompt(query: str, docs: list[Document], anomaly_note: str = "", domain_note: str = "") -> dict:
     context_blocks = _build_context(docs)
     user_content   = _build_user_content(query, context_blocks, anomaly_note, domain_note)
     return {
@@ -65,12 +52,7 @@ def _format_source(doc: Document) -> str:
     return src
 
 
-def _build_user_content(
-    query: str,
-    context: str,
-    anomaly_note: str,
-    domain_note: str,
-) -> str:
+def _build_user_content(query: str, context: str, anomaly_note: str, domain_note: str) -> str:
     parts = []
 
     if anomaly_note:
