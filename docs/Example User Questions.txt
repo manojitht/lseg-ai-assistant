@@ -1,0 +1,11 @@
+What should happen if a deployment fails in production?
+
+How many 'Access' category tickets are currently in 'Open' status?
+
+A deployment failed and a schema mismatch was detected. What should be done?
+
+VPN is not working for a user. What should we do?
+
+Can we reset MFA remotely for a user?
+
+A user is requesting a remote MFA reset due to urgency. Based on our policies and past incidents, how should this be handled?

@@ -1,0 +1,201 @@
+ID,Created_Date,Category,Assigned_To,Status,Priority,Description
+TKT-1001,2024-01-17 22:35,Database,DBA-Team,Escalated,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1002,2024-01-09 16:49,Access,Security-Ops,In-Progress,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1003,2024-01-29 04:34,Database,DBA-Team,Open,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1004,2024-01-01 05:14,Access,Security-Ops,Escalated,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1005,2024-01-01 19:43,Database,DBA-Team,Escalated,P1,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1006,2024-01-03 10:28,Deploy,SRE-Cloud,Escalated,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1007,2024-01-05 14:41,Database,DBA-Team,Open,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1008,2024-01-12 10:49,Access,Security-Ops,Open,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1009,2024-01-29 18:09,Access,Security-Ops,Open,P1,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1010,2024-01-20 15:51,Access,Security-Ops,Escalated,P1,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1011,2024-01-17 15:42,Access,Security-Ops,In-Progress,P3,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1012,2024-01-29 16:37,Deploy,SRE-Cloud,In-Progress,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1013,2024-01-04 21:59,Access,Security-Ops,Escalated,P3,User reports VPN not working and possible MFA issue. Needs investigation.
+TKT-1014,2024-01-23 01:54,Access,Security-Ops,Open,P3,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1015,2024-01-04 07:45,Database,DBA-Team,In-Progress,P1,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1016,2024-01-24 06:21,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1017,2024-01-24 10:50,Deploy,SRE-Cloud,Open,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1018,2024-01-11 23:02,Access,Security-Ops,In-Progress,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1019,2024-02-03 21:33,Database,DBA-Team,Open,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1020,2024-01-14 05:06,Database,DBA-Team,Escalated,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1021,2024-02-02 21:06,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1022,2024-02-04 12:30,Database,DBA-Team,In-Progress,P1,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1023,2024-01-16 20:37,Database,DBA-Team,Escalated,P1,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1024,2024-01-07 03:53,Database,DBA-Team,Open,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1025,2024-01-10 01:10,Access,Security-Ops,In-Progress,P1,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1026,2024-01-25 16:25,Deploy,SRE-Cloud,In-Progress,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1027,2024-02-01 06:09,Deploy,SRE-Cloud,Open,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1028,2024-01-16 10:58,Access,Security-Ops,In-Progress,P3,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1029,2024-01-08 03:13,Access,Security-Ops,In-Progress,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1030,2024-01-03 20:41,Deploy,SRE-Cloud,Escalated,P1,Deployment failed followed by schema mismatch observed in production environment.
+TKT-1031,2024-01-12 13:36,Database,DBA-Team,In-Progress,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1032,2024-02-03 12:53,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1033,2024-01-07 07:51,Access,Security-Ops,Open,P1,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1034,2024-01-26 08:21,Access,Security-Ops,In-Progress,P1,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1035,2024-01-05 10:43,Access,Security-Ops,In-Progress,P1,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1036,2024-02-04 02:23,Access,Security-Ops,Open,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1037,2024-02-01 21:05,Access,Security-Ops,Escalated,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1038,2024-01-15 22:15,Deploy,SRE-Cloud,Escalated,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1039,2024-01-08 05:50,Access,Security-Ops,In-Progress,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1040,2024-01-25 20:55,Access,Security-Ops,In-Progress,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1041,2024-01-23 09:24,Deploy,SRE-Cloud,Escalated,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1042,2024-02-02 01:02,Access,Security-Ops,Open,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1043,2024-01-30 20:48,Access,Security-Ops,In-Progress,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1044,2024-01-05 06:25,Database,DBA-Team,Escalated,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1045,2024-01-20 19:57,Access,Security-Ops,Escalated,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1046,2024-01-03 23:09,Database,DBA-Team,Escalated,P3,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1047,2024-01-31 07:50,Database,DBA-Team,In-Progress,P1,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1048,2024-01-11 05:09,Deploy,SRE-Cloud,Open,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1049,2024-01-17 22:47,Access,Security-Ops,Open,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1050,2024-01-15 15:08,Deploy,SRE-Cloud,Escalated,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1051,2024-01-14 23:46,Database,DBA-Team,Open,P3,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1052,2024-01-05 00:44,Database,DBA-Team,In-Progress,P3,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1053,2024-01-10 11:10,Access,Security-Ops,Open,P1,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1054,2024-01-04 19:22,Database,DBA-Team,Open,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1055,2024-01-29 00:56,Access,Security-Ops,Open,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1056,2024-01-24 10:54,Deploy,SRE-Cloud,In-Progress,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1057,2024-01-22 05:59,Access,Security-Ops,Escalated,P1,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1058,2024-01-27 15:27,Access,Security-Ops,Escalated,P3,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1059,2024-02-01 11:06,Deploy,SRE-Cloud,Open,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1060,2024-01-04 22:38,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1061,2024-01-11 22:45,Access,Security-Ops,Escalated,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1062,2024-01-01 13:20,Access,Security-Ops,Escalated,P1,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1063,2024-01-20 09:51,Database,DBA-Team,In-Progress,P3,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1064,2024-01-07 14:21,Access,Security-Ops,In-Progress,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1065,2024-01-01 23:52,Access,Security-Ops,In-Progress,P3,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1066,2024-01-17 03:21,Database,DBA-Team,Escalated,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1067,2024-01-29 05:32,Database,DBA-Team,Open,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1068,2024-01-27 04:02,Deploy,SRE-Cloud,Open,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1069,2024-02-01 18:19,Access,Security-Ops,Open,P1,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1070,2024-01-11 14:09,Access,Security-Ops,In-Progress,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1071,2024-01-11 01:17,Database,DBA-Team,Open,P3,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1072,2024-01-06 21:08,Database,DBA-Team,Escalated,P3,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1073,2024-02-04 13:13,Access,Security-Ops,In-Progress,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1074,2024-01-30 18:38,Access,Security-Ops,Open,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1075,2024-02-01 03:28,Deploy,SRE-Cloud,Open,P2,Deployment failed followed by schema mismatch observed in production environment.
+TKT-1076,2024-01-05 23:25,Access,Security-Ops,Open,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1077,2024-01-16 04:52,Deploy,SRE-Cloud,In-Progress,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1078,2024-02-04 12:28,Access,Security-Ops,In-Progress,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1079,2024-01-24 21:59,Access,Security-Ops,In-Progress,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1080,2024-01-23 04:42,Access,Security-Ops,In-Progress,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1081,2024-01-05 13:08,Deploy,SRE-Cloud,Open,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1082,2024-01-13 14:51,Access,Security-Ops,Escalated,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1083,2024-01-21 04:30,Access,Security-Ops,In-Progress,P3,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1084,2024-02-02 16:09,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1085,2024-01-05 22:50,Database,DBA-Team,Open,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1086,2024-01-09 01:17,Database,DBA-Team,Escalated,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1087,2024-01-22 04:49,Deploy,SRE-Cloud,Open,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1088,2024-01-10 06:17,Access,Security-Ops,Escalated,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1089,2024-01-30 03:12,Access,Security-Ops,Open,P3,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1090,2024-01-05 21:19,Deploy,SRE-Cloud,In-Progress,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1091,2024-01-20 20:35,Deploy,SRE-Cloud,Escalated,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1092,2024-01-25 05:40,Database,DBA-Team,In-Progress,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1093,2024-01-18 14:55,Access,Security-Ops,Open,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1094,2024-01-30 21:34,Database,DBA-Team,In-Progress,P1,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1095,2024-01-16 17:19,Deploy,SRE-Cloud,Escalated,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1096,2024-01-23 05:28,Database,DBA-Team,Open,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1097,2024-01-12 12:47,Access,Security-Ops,Open,P1,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1098,2024-01-18 14:02,Access,Security-Ops,In-Progress,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1099,2024-01-31 15:27,Database,DBA-Team,Escalated,P3,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1100,2024-02-03 14:13,Access,Security-Ops,Open,P3,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1101,2024-01-19 14:09,Database,DBA-Team,Open,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1102,2024-01-27 19:27,Access,Security-Ops,Open,P1,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1103,2024-01-10 14:40,Database,DBA-Team,In-Progress,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1104,2024-02-01 00:09,Database,DBA-Team,Open,P3,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1105,2024-01-17 11:39,Deploy,SRE-Cloud,In-Progress,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1106,2024-01-31 05:47,Database,DBA-Team,Open,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1107,2024-01-02 08:36,Access,Security-Ops,Open,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1108,2024-01-20 10:56,Deploy,SRE-Cloud,Escalated,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1109,2024-01-01 22:54,Access,Security-Ops,Open,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1110,2024-01-05 15:45,Access,Security-Ops,Escalated,P2,System latency observed in database queries. No clear root cause.
+TKT-1111,2024-01-01 12:11,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1112,2024-01-09 03:09,Access,Security-Ops,Open,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1113,2024-01-02 10:45,Deploy,SRE-Cloud,Open,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1114,2024-01-02 08:43,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1115,2024-01-14 09:07,Database,DBA-Team,Open,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1116,2024-02-03 13:57,Database,DBA-Team,Escalated,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1117,2024-01-28 12:59,Access,Security-Ops,Open,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1118,2024-01-12 16:16,Deploy,SRE-Cloud,In-Progress,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1119,2024-01-24 10:15,Access,Security-Ops,Escalated,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1120,2024-01-12 09:47,Deploy,SRE-Cloud,Open,P3,Deployment failed followed by schema mismatch observed in production environment.
+TKT-1121,2024-01-20 09:30,Database,DBA-Team,Open,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1122,2024-01-14 14:55,Access,Security-Ops,In-Progress,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1123,2024-01-13 19:24,Access,Security-Ops,Escalated,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1124,2024-01-30 13:58,Database,DBA-Team,Escalated,P3,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1125,2024-01-25 08:25,Access,Security-Ops,Open,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1126,2024-01-11 23:48,Access,Security-Ops,Escalated,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1127,2024-01-08 03:33,Access,Security-Ops,In-Progress,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1128,2024-01-13 21:53,Access,Security-Ops,Open,P3,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1129,2024-01-15 18:48,Access,Security-Ops,In-Progress,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1130,2024-02-02 03:35,Database,DBA-Team,In-Progress,P3,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1131,2024-01-04 09:46,Database,DBA-Team,Open,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1132,2024-01-23 06:06,Database,DBA-Team,In-Progress,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1133,2024-01-17 05:17,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1134,2024-01-26 03:07,Access,Security-Ops,Open,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1135,2024-01-18 03:55,Database,DBA-Team,Open,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1136,2024-01-03 18:15,Deploy,SRE-Cloud,In-Progress,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1137,2024-01-28 00:23,Access,Security-Ops,In-Progress,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1138,2024-01-19 04:05,Access,Security-Ops,In-Progress,P1,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1139,2024-01-28 15:05,Deploy,SRE-Cloud,Escalated,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1140,2024-02-04 11:41,Access,Security-Ops,Open,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1141,2024-01-10 21:56,Deploy,SRE-Cloud,Escalated,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1142,2024-01-02 21:43,Access,Security-Ops,In-Progress,P3,EMERGENCY OVERRIDE: Remote MFA reset completed with CISO approval. Incident ID: TKT-7421. Biometric verification used.
+TKT-1143,2024-01-13 13:53,Access,Security-Ops,In-Progress,P2,User reports VPN not working and possible MFA issue. Needs investigation.
+TKT-1144,2024-01-20 10:24,Deploy,SRE-Cloud,Escalated,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1145,2024-01-29 20:34,Access,Security-Ops,In-Progress,P1,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1146,2024-01-03 04:17,Database,DBA-Team,Escalated,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1147,2024-01-26 03:55,Deploy,SRE-Cloud,In-Progress,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1148,2024-01-02 16:52,Database,DBA-Team,In-Progress,P3,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1149,2024-01-29 12:41,Access,Security-Ops,Escalated,P1,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1150,2024-01-27 23:02,Database,DBA-Team,Open,P1,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1151,2024-02-03 10:55,Access,Security-Ops,Escalated,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1152,2024-01-02 22:48,Database,DBA-Team,Open,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1153,2024-01-10 06:19,Deploy,SRE-Cloud,In-Progress,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1154,2024-01-19 23:07,Access,Security-Ops,Open,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1155,2024-01-22 22:54,Access,Security-Ops,In-Progress,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1156,2024-01-29 22:49,Access,Security-Ops,In-Progress,P1,User reports VPN not working and possible MFA issue. Needs investigation.
+TKT-1157,2024-01-10 08:25,Access,Security-Ops,Open,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1158,2024-01-26 13:27,Access,Security-Ops,Escalated,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1159,2024-01-20 08:30,Database,DBA-Team,Escalated,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1160,2024-01-14 10:39,Access,Security-Ops,Open,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1161,2024-01-07 07:15,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1162,2024-01-14 21:12,Deploy,SRE-Cloud,Escalated,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1163,2024-01-13 10:56,Access,Security-Ops,Escalated,P2,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1164,2024-01-01 07:39,Access,Security-Ops,In-Progress,P1,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1165,2024-01-04 11:35,Deploy,SRE-Cloud,Escalated,P2,Deployment failed followed by schema mismatch observed in production environment.
+TKT-1166,2024-01-01 08:25,Deploy,SRE-Cloud,Open,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1167,2024-01-04 13:57,Deploy,SRE-Cloud,Escalated,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1168,2024-01-11 04:02,Deploy,SRE-Cloud,In-Progress,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1169,2024-01-11 21:19,Database,DBA-Team,Escalated,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1170,2024-01-11 13:56,Database,DBA-Team,Open,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1171,2024-01-23 15:38,Database,DBA-Team,In-Progress,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1172,2024-01-11 16:13,Deploy,SRE-Cloud,Open,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1173,2024-01-02 18:02,Access,Security-Ops,In-Progress,P1,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1174,2024-01-20 00:42,Database,DBA-Team,Escalated,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1175,2024-01-05 17:54,Access,Security-Ops,Escalated,P3,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1176,2024-01-13 16:37,Access,Security-Ops,In-Progress,P1,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1177,2024-01-19 07:26,Deploy,SRE-Cloud,Open,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1178,2024-01-14 06:56,Deploy,SRE-Cloud,Open,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1179,2024-01-14 17:20,Database,DBA-Team,In-Progress,P2,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1180,2024-01-07 11:10,Access,Security-Ops,In-Progress,P2,Request for remote MFA reset via phone call due to urgent trading issue. User claims executive approval.
+TKT-1181,2024-01-17 11:01,Access,Security-Ops,Open,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1182,2024-01-12 00:56,Access,Security-Ops,In-Progress,P1,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1183,2024-01-09 05:30,Deploy,SRE-Cloud,Open,P3,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1184,2024-01-31 18:09,Access,Security-Ops,Open,P3,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1185,2024-01-01 23:40,Database,DBA-Team,Open,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1186,2024-01-09 21:42,Access,Security-Ops,Escalated,P3,VPN access error. Refer to SOP-001: VPN Access Issues.
+TKT-1187,2024-02-02 19:55,Database,DBA-Team,In-Progress,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1188,2024-01-31 09:11,Database,DBA-Team,Escalated,P2,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1189,2024-01-13 09:02,Deploy,SRE-Cloud,Escalated,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1190,2024-01-23 15:24,Access,Security-Ops,Escalated,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1191,2024-02-01 00:31,Deploy,SRE-Cloud,In-Progress,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1192,2024-02-03 20:36,Access,Security-Ops,In-Progress,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1193,2024-01-13 17:07,Database,DBA-Team,In-Progress,P1,Slow database query identified. Refer to SOP-003: Query Performance Issues.
+TKT-1194,2024-01-31 16:43,Database,DBA-Team,Open,P1,Schema mismatch detected. Refer to SOP-003: Schema Mismatch.
+TKT-1195,2024-01-24 01:35,Deploy,SRE-Cloud,In-Progress,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1196,2024-01-22 14:30,Deploy,SRE-Cloud,Escalated,P1,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
+TKT-1197,2024-01-27 19:50,Access,Security-Ops,In-Progress,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1198,2024-01-15 01:55,Access,Security-Ops,In-Progress,P2,User lost MFA token. Refer to SOP-001: MFA Reset Policy.
+TKT-1199,2024-02-01 15:19,Access,Security-Ops,Escalated,P2,User account locked. Refer to SOP-001: Account Lockout.
+TKT-1200,2024-01-30 10:16,Deploy,SRE-Cloud,In-Progress,P2,Deployment failed in production. Refer to SOP-002: Deployment Failure Handling.
