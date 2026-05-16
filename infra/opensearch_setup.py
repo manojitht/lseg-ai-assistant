@@ -1,8 +1,3 @@
-"""
-PSEUDOCODE — Amazon OpenSearch Serverless Setup
-Creates the vector search collection and k-NN index.
-Replaces FAISS in production — the retriever interface is unchanged.
-"""
 import boto3
 import json
 import time

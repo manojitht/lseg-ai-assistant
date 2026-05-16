@@ -1,5 +1,4 @@
 from __future__ import annotations
-
 import re
 from src.ingestion.document_loader import Document
 
