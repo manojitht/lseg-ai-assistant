@@ -29,7 +29,7 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 # AWS Bedrock config — override at ECS task level via environment variables
 # or SSM Parameter Store (see infra/iam_policies.py for required permissions)
-ENV BEDROCK_REGION="us-east-1"
+ENV BEDROCK_REGION="eu-west-2"
 ENV DOCS_DIR="docs"
 ENV FAISS_INDEX_PATH=".cache/faiss_index"
 ENV CONFIDENCE_THRESHOLD="0.30"
