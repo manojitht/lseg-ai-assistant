@@ -2,6 +2,7 @@ from __future__ import annotations
 import logging
 from fastapi import APIRouter, HTTPException, Request
 from src.api.schemas import AskRequest, AskResponse, HealthResponse
+from src.llm.bedrock_llm import RateLimitError
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -24,7 +25,10 @@ def ask(body: AskRequest, request: Request) -> AskResponse:
         raise HTTPException(status_code=503, detail="Assistant not initialised yet.")
 
     logger.info("POST /ask query=%r", body.query[:80])
-    response = assistant.ask(body.query)
+    try:
+        response = assistant.ask(body.query)
+    except RateLimitError as e:
+        raise HTTPException(status_code=429, detail=str(e))
 
     return AskResponse(
         answer=response.answer,
