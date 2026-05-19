@@ -56,10 +56,10 @@ def _build_user_content(query: str, context: str, anomaly_note: str, domain_note
     parts = []
 
     if anomaly_note:
-        parts.append(f"⚠ POLICY ANOMALY FLAG:\n{anomaly_note}\n")
+        parts.append(f"POLICY ANOMALY FLAG:\n{anomaly_note}\n")
 
     if domain_note:
-        parts.append(f"ℹ RETRIEVAL NOTE:\n{domain_note}\n")
+        parts.append(f"RETRIEVAL NOTE:\n{domain_note}\n")
 
     parts.append(f"CONTEXT:\n{context}")
     parts.append(f"QUESTION:\n{query}")

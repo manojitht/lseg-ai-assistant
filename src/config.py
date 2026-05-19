@@ -9,7 +9,7 @@ FAISS_INDEX_PATH   = os.environ.get("FAISS_INDEX_PATH", ".cache/faiss_index")
 CONFIDENCE_THRESHOLD = float(os.environ.get("CONFIDENCE_THRESHOLD", "0.30"))
 TOP_K                = int(os.environ.get("TOP_K", "5"))
 
-MAX_TOKENS  = 3000
+MAX_TOKENS  = 5000
 TEMPERATURE = 0.0   # deterministic — compliance requirement
 
 DOCS_DIR = os.environ.get("DOCS_DIR", "docs")

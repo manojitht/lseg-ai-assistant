@@ -115,6 +115,6 @@ def _list_response(
         )
     lines.append(
         f"\n_Showing {len(rows)} of {len(filtered)} result(s). "
-        "Source: structured ticket data (deterministic query)_"
+        "_Source: structured ticket data (deterministic query)_"
     )
     return "\n".join(lines)
