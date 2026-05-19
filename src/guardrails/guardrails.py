@@ -37,7 +37,6 @@ class GuardrailResult:
 
 
 def check_confidence(scores: list[float]) -> bool:
-    """Return True if confidence is too low to proceed with LLM call."""
     return not scores or max(scores) < config.CONFIDENCE_THRESHOLD
 
 

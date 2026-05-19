@@ -75,10 +75,6 @@ class Assistant:
 
 
 def build_index(docs_dir: str) -> tuple[FaissStore, pd.DataFrame]:
-    """
-    Load all documents, embed them, build the FAISS index, and return
-    the store + tickets DataFrame. Persists the index to disk for fast restart.
-    """
     from src.embeddings import bedrock_embeddings
     from src.ingestion.chunker import build_all_chunks
     from src.ingestion.document_loader import (
@@ -108,7 +104,6 @@ def build_index(docs_dir: str) -> tuple[FaissStore, pd.DataFrame]:
 
 
 def load_or_build_index(docs_dir: str) -> tuple[FaissStore, pd.DataFrame]:
-    """Load persisted index if available; otherwise build from scratch."""
     from src.ingestion.document_loader import load_tickets_dataframe
 
     if FaissStore.exists(config.FAISS_INDEX_PATH):
